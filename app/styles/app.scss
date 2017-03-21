@@ -1,0 +1,16 @@
+$blue: #71c0e2;
+$white: #fff;
+
+@import "bulma";
+
+.nav {
+  background: $blue;
+}
+
+.nav-item {
+  color: $white;
+}
+
+.nav-item-left {
+  margin-left: 1rem;
+}
