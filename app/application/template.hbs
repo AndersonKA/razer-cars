@@ -1,7 +1,9 @@
 <div class="nav is-info">
   <div class="container">
     <div class="nav-left">
-      <a class="nav-item nav-item-left">Razor Cars</a>
+      <a class="nav-item nav-item-left logo">
+        {{#link-to "index"}}Razor Cars{{/link-to}}
+      </a>
     </div>
     <span class="nav-toggle">
       <span></span>
@@ -11,13 +13,13 @@
     <div class="nav-right nav-menu">
 
       <a class="nav-item is-tab">
-        Profile
+        {{#link-to "index"}}Home{{/link-to}}
       </a>
       <a class="nav-item is-tab">
-        All Manufacturers
+        {{#link-to "manufacturers"}}All Manufacturers{{/link-to}}
       </a>
       <a class="nav-item is-tab">
-        Add Manufacturer
+        {{#link-to "manufacturers-new"}}Add Manufacturer{{/link-to}}
       </a>
 
     </div>

@@ -2,29 +2,32 @@
   <div class="columns">
     <div class="column is-half is-offset-one-quarter">
 
-      <div class="field">
-        <label class="label"></label>
-        <p class="control">
-          <input class="input" type="text" placeholder="Company Name">
-        </p>
-      </div>
+<form {{action "save" on="submit"}}>
+  <div class="field">
+    <label class="label"></label>
+    <p class="control">
+      {{input class="input" type="text" placeholder="Company Name" value=formValues.name}}
+    </p>
+  </div>
 
-      <div class="field">
-        <label class="label"></label>
-        <p class="control">
-          <input class="input" type="text" placeholder="ISO Country Code">
-        </p>
-      </div>
+  <div class="field">
+    <label class="label"></label>
+    <p class="control">
+      {{input class="input" type="text" placeholder="ISO Country Code" value=formValues.country}}
+    </p>
+  </div>
 
-
-      <div class="field is-grouped">
-        <div class="control">
-          <button class="button is-primary">Submit</button>
-        </div>
-        <div class="control">
-          <button class="button is-info">Cancel</button>
-        </div>
-      </div>
+  <div class="field is-grouped buttons">
+    <div class="control">
+      <button class="button is-primary">don't submit</button>
+    </div>
+    <div class="control">
+      <button class="button">
+        {{#link-to "manufacturers"}}Back{{/link-to}}
+      </button>
+    </div>
+  </div>
+</form>
 
     </div>
   </div>

@@ -15,7 +15,7 @@ export default Ember.Controller.extend({
         body: JSON.stringify(this.formValues),
       }).then(r => r.json())
           .then(() => {
-            this.transitionToRoute('index');
+            this.transitionToRoute('manufacturer');
           });
     },
   }
