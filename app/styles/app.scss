@@ -1,6 +1,7 @@
 $blue: #71c0e2;
 $otherblue: #42aadd;
 $white: #fff;
+$body-background: $white;
 
 @import "bulma";
 
@@ -14,6 +15,10 @@ $white: #fff;
 
 .nav-item-left {
   margin-left: 1rem;
+}
+
+.nav-item-right {
+  margin-right: 1rem;
 }
 
 .buttons {
