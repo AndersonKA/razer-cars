@@ -9,13 +9,13 @@ export default Ember.Controller.extend({
 
   actions: {
     save() {
-      fetch(apiUrl, {
+      fetch(`${config.apiUrl}/brands`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', accept: 'application/json' },
         body: JSON.stringify(this.formValues),
       }).then(r => r.json())
           .then(() => {
-            this.transitionToRoute('manufacturers');
+            this.transitionToRoute('manufacturer');
           });
     },
   }

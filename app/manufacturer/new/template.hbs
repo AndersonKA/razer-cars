@@ -3,7 +3,7 @@
     <div class="column is-8 is-offset-2 is-mobile">
 
 <div class="title">Add New Manufacturer</div>
-<form {{action "save" on="submit"}}>
+<form  {{action "save" on="submit"}}>
   <div class="field">
     <label class="label"></label>
     <p class="control">
@@ -20,15 +20,18 @@
 
   <div class="field is-grouped buttons">
     <div class="control">
-      <button class="button is-primary">don't submit</button>
+      <button class="button">
+        Submit
+      </button>
     </div>
     <div class="control">
       <button class="button">
-        {{#link-to "manufacturers"}}Back{{/link-to}}
+        {{#link-to "manufacturer"}}Back{{/link-to}}
       </button>
     </div>
   </div>
 </form>
+
 
     </div>
   </div>
