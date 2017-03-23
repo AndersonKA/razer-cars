@@ -9,7 +9,7 @@ export default Ember.Controller.extend({
 
   actions: {
     save() {
-      fetch(apiUrl, {
+      fetch(config.apiUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', accept: 'application/json' },
         body: JSON.stringify(this.formValues),
