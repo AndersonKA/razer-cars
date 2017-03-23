@@ -1,16 +1,21 @@
-<div class="section">
-  <nav class="panel is-half is-center">
-    <p class="panel-heading title">
-      {{model.name}}
-    </p>
-    <div class="panel-block">
-      {{#link-to "manufacturer.car.new" class="button is-outlined is-fullwidth"}}Add New Car{{/link-to}}
+<div class="section section-group">
+
+  <div class="columns">
+    <div class="column is-half is-offset-one-quarter is-mobile">
+      <nav class="panel">
+        <p class="panel-heading title">
+          {{model.name}}
+        </p>
+        <div class="panel-block">
+          {{#link-to "manufacturer.car.new" class="button is-fullwidth is-info is-outlined" }}Add New Car{{/link-to}}
+        </div>
+      </nav>
     </div>
-  </nav>
+  </div>
 
 
-    <div class="grid">
-      {{#each model.cars as |car|}}
+  <div class="grid">
+    {{#each model.cars as |car|}}
       <div class="grid__item">
         <nav class="panel">
           <p class="panel-heading title">
@@ -23,8 +28,8 @@
         </nav>
 
       </div>
-      {{/each}}
-    </div>
+    {{/each}}
+  </div>
 
 
 </div>
