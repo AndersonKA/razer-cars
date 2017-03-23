@@ -2,19 +2,33 @@
   <div class="columns">
     <div class="column is-8 is-offset-2 is-mobile">
 
-<div class="title">Add New Car</div>
+<div class="title">Add New Car for {{model.name}}</div>
 <form  {{action "save" on="submit"}}>
   <div class="field">
     <label class="label"></label>
     <p class="control">
-      {{input class="input" type="text" placeholder="Company Name" value=formValues.name}}
+      {{input class="input" type="text" placeholder="Model Name" value=formValues.model}}
     </p>
   </div>
 
   <div class="field">
     <label class="label"></label>
     <p class="control">
-      {{input class="input" type="text" placeholder="ISO Country Code" value=formValues.country}}
+      {{input class="input" type="text" placeholder="Year" value=formValues.year}}
+    </p>
+  </div>
+
+  <div class="field">
+    <label class="label"></label>
+    <p class="control">
+      {{input class="input" type="text" placeholder="Horsepower" value=formValues.horsepower}}
+    </p>
+  </div>
+
+  <div class="field">
+    <label class="label"></label>
+    <p class="control">
+      {{input class="input" type="text" placeholder="Price" value=formValues.price}}
     </p>
   </div>
 
