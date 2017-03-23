@@ -4,25 +4,27 @@
       {{model.name}}
     </p>
     <div class="panel-block">
-            {{#link-to "manufacturer.car.new" class="button is-outlined is-fullwidth"}}Add New Car{{/link-to}}
+      {{#link-to "manufacturer.car.new" class="button is-outlined is-fullwidth"}}Add New Car{{/link-to}}
     </div>
   </nav>
 
-  {{#each model as |value|}}
+
     <div class="grid">
+      {{#each model.cars as |car|}}
       <div class="grid__item">
         <nav class="panel">
           <p class="panel-heading title">
-            {{value.year}} - {{value.model}}
+            {{car.year}} - {{car.name}}
           </p>
           <div class="panel-block">
-            <p>Horsepower: {{value.horsepower}}</p>
-            <p>Price: ${{value.price}}</p>
+            <p>Horsepower: {{car.hp}}</p>
+            <p>Price: ${{car.price}}</p>
           </div>
         </nav>
 
       </div>
+      {{/each}}
     </div>
-  {{/each}}
+
 
 </div>

@@ -3,9 +3,9 @@ import config from 'razer-cars/config/environment';
 
 export default Ember.Controller.extend({
   formValues: {
-    model: '',
+    name: '',
     year: '',
-    horsepower: '',
+    hp: '',
     price: '',
   },
 
