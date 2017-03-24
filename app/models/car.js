@@ -6,5 +6,5 @@ export default DS.Model.extend({
   year: DS.attr(),
   price: DS.attr('number'),
 
-  //project: DS.belongsTo('project'),
+  brand: DS.belongsTo('brand'),
 });
