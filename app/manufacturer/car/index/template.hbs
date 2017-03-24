@@ -9,6 +9,7 @@
         <div class="panel-block">
           <button {{action "deleteBrand" model}} class="button is-outlined is-danger">Delete</button>
           {{#link-to "manufacturer.car.new" class="button is-info is-outlined" }}Add New Car{{/link-to}}
+          {{#link-to "manufacturer.edit" model.id class="button is-primary is-outlined" }}Edit Manufacturer{{/link-to}}
         </div>
       </nav>
     </div>
