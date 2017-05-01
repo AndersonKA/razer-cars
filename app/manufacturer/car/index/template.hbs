@@ -1,0 +1,38 @@
+<div class="section section-group">
+
+  <div class="columns">
+    <div class="column is-half is-offset-one-quarter is-mobile">
+      <nav class="panel">
+        <p class="panel-heading title">
+          {{model.name}}
+        </p>
+        <div class="panel-block">
+          <button {{action "deleteBrand" model}} class="button is-outlined is-danger">Delete</button>
+          {{#link-to "manufacturer.car.new" class="button is-info is-outlined" }}Add New Car{{/link-to}}
+          {{#link-to "manufacturer.edit" model.id class="button is-primary is-outlined" }}Edit Manufacturer{{/link-to}}
+        </div>
+      </nav>
+    </div>
+  </div>
+
+
+  <div class="grid">
+    {{#each model.cars as |car|}}
+      <div class="grid__item">
+        <nav class="panel">
+          <p class="panel-heading title">
+            {{car.year}} - {{car.name}}
+          </p>
+          <div class="panel-block">
+            <p>Horsepower: {{car.hp}}</p>
+            <p>Price: ${{car.price}}</p>
+            <button {{action "deleteCar" car}} class="button is-outlined is-danger">Delete</button>
+          </div>
+        </nav>
+
+      </div>
+    {{/each}}
+  </div>
+
+
+</div>

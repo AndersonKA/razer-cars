@@ -1,0 +1,25 @@
+<div class="nav is-mobile">
+  <div class="container">
+    <div class="nav-left">
+      <a class="nav-item nav-item-left logo">
+        {{#link-to "index"}}RazerCars{{/link-to}}
+      </a>
+    </div>
+
+    <div class="nav-right">
+
+      <a class="nav-item">
+        {{#link-to "index"}}Home{{/link-to}}
+      </a>
+      <a class="nav-item">
+        {{#link-to "manufacturer"}}All Manufacturers{{/link-to}}
+      </a>
+      <a class="nav-item nav-item-right">
+        {{#link-to "manufacturer.new"}}Add Manufacturer{{/link-to}}
+      </a>
+
+    </div>
+  </div>
+</div>
+
+{{outlet}}

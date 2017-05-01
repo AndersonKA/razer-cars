@@ -1,0 +1,38 @@
+<div class="section">
+  <div class="columns">
+    <div class="column is-8 is-offset-2 is-mobile">
+
+<div class="title">Edit Manufacturer</div>
+<form  {{action "updateBrand" model on="submit"}}>
+  <div class="field">
+    <label class="label"></label>
+    <p class="control">
+      {{input class="input edit" type="text" placeholder="Company Name" value=model.name}}
+    </p>
+  </div>
+
+  <div class="field">
+    <label class="label"></label>
+    <p class="control">
+      {{input class="input edit" type="text" placeholder="ISO Country Code" value=model.country}}
+    </p>
+  </div>
+
+  <div class="field is-grouped buttons">
+    <div class="control">
+      <button class="button">
+        Submit
+      </button>
+    </div>
+    <div class="control">
+      <button class="button">
+        {{#link-to "manufacturer"}}Back{{/link-to}}
+      </button>
+    </div>
+  </div>
+</form>
+
+
+    </div>
+  </div>
+</div>

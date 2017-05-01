@@ -1,0 +1,46 @@
+$blue: #71c0e2;
+$otherblue: #4799c2;
+$white: #fff;
+$body-background: $white;
+
+@import "bulma";
+
+.nav {
+  background: $blue;
+}
+
+.nav-item {
+  color: $white;
+}
+
+.nav-item-left {
+  margin-left: 1rem;
+}
+
+.nav-item-right {
+  margin-right: 1rem;
+}
+
+.buttons {
+  display: flex;
+}
+
+.button {
+  margin: 1rem 1rem 0 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem;
+
+  &__item {
+    flex-basis: calc(100% / 3 - 2rem);
+    flex-grow: 1;
+    margin: 1rem;
+  }
+}

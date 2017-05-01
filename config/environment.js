@@ -2,6 +2,13 @@
 
 module.exports = function(environment) {
   var ENV = {
+    apiUrl: 'https://razerapi.herokuapp.com/kae/basic',
+
+    DS: {
+      host: 'https://razerapi.herokuapp.com',
+      namespace: 'kae',
+    },
+
     modulePrefix: 'razer-cars',
     environment: environment,
     rootURL: '/',
