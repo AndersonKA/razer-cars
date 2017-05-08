@@ -11,7 +11,5 @@ export default Ember.Controller.extend({
     deleteCar(car) {
       car.destroyRecord();
     }
-
-
   }
 });

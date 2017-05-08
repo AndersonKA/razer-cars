@@ -3,13 +3,13 @@
   <div class="columns">
     <div class="column is-half is-offset-one-quarter is-mobile">
       <nav class="panel">
-        <p class="panel-heading title">
+        <p class="panel-heading title has-text-centered">
           {{model.name}}
         </p>
-        <div class="panel-block">
-          <button {{action "deleteBrand" model}} class="button is-outlined is-danger">Delete</button>
+        <div class="panel-block is-flex has-text-centered">
           {{#link-to "manufacturer.car.new" class="button is-info is-outlined" }}Add New Car{{/link-to}}
           {{#link-to "manufacturer.edit" model.id class="button is-primary is-outlined" }}Edit Manufacturer{{/link-to}}
+          <button {{action "deleteBrand" model}} class="button is-outlined is-danger">Delete Manufacturer</button>
         </div>
       </nav>
     </div>
@@ -18,7 +18,7 @@
 
   <div class="grid">
     {{#each model.cars as |car|}}
-      <div class="grid__item">
+      <div class="grid__item has-text-centered">
         <nav class="panel">
           <p class="panel-heading title">
             {{car.year}} - {{car.name}}
